@@ -4,23 +4,22 @@
 
 ## Features
 
-- **Custom Date and Time Models**: Define `SimpleDate` and `SimpleTime` structs to represent dates and times.
+- **Custom Date and Time Models**: Define `SimpleDate` and `Time` structs to represent dates and times.
 - **Flexible Formatting**: Support for multiple date formats, including 24-hour and 12-hour (AM/PM) time formats.
 - **No Native Date Dependencies**: Avoids using native date types, allowing for custom handling and formatting.
 
 ### Adding to Your Project
 
-To include `DateTimeSupport` in your project, you can copy the relevant structs (`SimpleDate`, `SimpleTime`, and `DateFormat`) into your codebase.
+To include `DateTimeSupport` in your project, you can copy the relevant structs (`SimpleDate`, `Time`, and `DateFormat`) into your codebase.
 
 ## Usage
 
 ### 1. Creating a Simple Date and Time
 
 ```swift
-import DateTimeSupport
 
-// Creating a SimpleTime instance
-let time = SimpleTime(hour: 14, minute: 30)
+// Creating a Time instance
+let time = Time(hour: 14, minute: 30)
 
 // Creating a SimpleDate instance with the above time
 let date = SimpleDate(year: 2024, month: 9, day: 23, time: time)
